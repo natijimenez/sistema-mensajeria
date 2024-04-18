@@ -1,0 +1,203 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* paleta de colores */
+:root {
+    --white: #FFF;
+    --platinum: #E8EBE4;
+    --gray: #BEC1BB;
+    --blue-bell: #A491D2;
+    --soap: #CDC3E6;
+    --pale-lavender: #D4DCFF;
+    --dark-jungle: #1B1F21;
+    --outer-space: #444749;
+    --old-silver: #828485;
+}
+
+.contenedor__principal {
+    display: flex;
+    color: var(--dark-jungle);
+}
+
+
+/* ESTILOS ASIDE (contenedor izquierda) */
+/* estilos usuario */
+.contenedor__izquierda {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+}
+
+.contenedor__usuario {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.contenedor__usuario-izquierda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenedor__usuario-izquierda figure {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contenedor__usuario-izquierda figure img {
+    width: 100%;
+    border: var(--gray) 1px solid;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.contenedor__usuario-derecha {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contenedor__usuario-derecha i {
+    color: var(--old-silver);
+}
+
+.contenedor__usuario-derecha i:hover {
+    color: var(--gray);
+}
+
+.contenedor__usuario-nombre {
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.contenedor__usuario-estado {
+    font-size: 0.8rem;
+    color: var(--old-silver);
+}
+
+/* estilos botón */
+.boton__chat {
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.boton__chat-btn {
+    background-color: var(--blue-bell);
+    color: var(--white);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton__chat-btn:hover {
+    background-color: var(--soap);
+}
+
+.boton__chat-btn:focus {
+    background-color: var(--gray);
+}
+
+/* estilos contactos */
+.contenedor__contactos {
+    overflow-y: scroll;
+    height: calc(100% - 200px);
+    scrollbar-color: var(--blue-bell) var(--white);
+    scrollbar-width: thin;
+}
+
+.contenedor__contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 5rem;
+    align-items: center;
+    padding-left: 1.5rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.contenedor__contacto figure {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contenedor__contacto figure img {
+    width: 100%;
+    border: var(--gray) 1px solid;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.contenedor__contacto-nombre {
+    font-size: 1rem;
+}
+
+.contenedor__contacto-mensaje {
+    font-size: 0.9rem;
+}
+
+
+
+
+/* ESTILOS CONTENIDO (contenedor derecha) */
+.contenedor__derecha {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* estilos imagen */
+.contenedor__derecha-imagen {
+    width: 250px;
+}
+
+.contenedor__derecha-imagen img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* estilos textos */
+.contenedor__derecha-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.2rem;
+    max-width: 580px;
+}
+
+.contenedor__derecha-texto h1 {
+    font-size: 2.8rem;
+}
+
+.contenedor__derecha-texto p {
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+.texto-negrilla {
+    font-weight: 700;
+}
+
